@@ -377,3 +377,8 @@ body .nav-border {
     margin-top: 82px;
   }
 }
+@media screen and (max-width: 400px) {
+  .content-wrapper {
+    margin-top: 50px;
+  }
+}
