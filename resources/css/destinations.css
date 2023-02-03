@@ -262,6 +262,7 @@ body .nav-border {
   }
   .content__description {
     text-align: center;
+    z-index: -1;
   }
   .content-detail__wrapper {
     text-transform: uppercase;
@@ -317,7 +318,6 @@ body .nav-border {
     border-bottom: none !important;
     color: var(--font-color2) !important;
   }
-
   .planet-image {
     width: 55%;
   }
@@ -365,7 +365,7 @@ body .nav-border {
   .content-detail__wrapper h3 {
     font-size: 1.5rem;
   }
-  .content__travel{
+  .content__travel {
     margin-bottom: 1.5rem;
   }
 }
