@@ -2,7 +2,6 @@
 
 function navigation() {
   var navBar = document.getElementsByClassName("nav-wrapper")[0];
-  console.log(navBar);
   var btnOpen = document.getElementsByClassName("button__open")[0];
   var btnClose = document.getElementsByClassName("button__close")[0];
   if (navBar.className === "nav-wrapper") {
