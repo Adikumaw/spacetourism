@@ -10,7 +10,6 @@ function data_func(type, name) {
       var arrDataDest = myData.destinations;
       var arrDataCrew = myData.crew;
       var arrDataTech = myData.technology;
-
       if (type === "destination") {
         for (let i = 0; i < arrDataDest.length; i++) {
           //  BORDER BOTTOM ADDER TO CURRENT PLANET TAB........
@@ -46,7 +45,10 @@ function data_func(type, name) {
       } else if (type === "technology") {
         for (let i = 0; i < arrDataTech.length; i++) {
           if (arrDataTech[i].name === name) {
-            console.log(arrDataTech[i]);
+            contentName.innerText = arrDataTech[i].name;
+            contentDescription.innerText = arrDataTech[i].description;
+            vehicleImage.innerHTML = `<img class="vehicle__port" src="${arrDataTech[i].images.portrait}" alt="vehicle_image">
+            <img class="vehicle__land" src="${arrDataTech[i].images.landscape}" alt="vehicle_image">`;
           }
         }
       }

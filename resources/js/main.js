@@ -28,3 +28,12 @@ function dotColorFunc(num) {
     }
   }
 }
+function countColorFunc(num) {
+  for (let i = 0; i < countingColor.length; i++) {
+    if (i == num) {
+      countingColor[i].className += " sticky-color";
+    } else {
+      countingColor[i].className = "counting__count";
+    }
+  }
+}

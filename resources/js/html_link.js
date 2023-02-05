@@ -42,3 +42,26 @@ if (crewMemberImage === undefined) {
 
   data_func(`crew`, `Douglas Hurley`);
 }
+// CREW HTML OBJECT LINKS------
+var vehicleImage = document.getElementsByClassName("content-vehicle")[0];
+if (vehicleImage === undefined) {
+  // EXEPTION...
+  console.log("cant find");
+} else {
+  // navigation tag color fix
+  var navName = document.getElementsByClassName("nav-wrapper")[0].children;
+  navName[3].children[0].className = "nav-border";
+  // dotColor color fix
+  var countingColor =
+    document.getElementsByClassName("content-counting")[0].children;
+  countingColor[0].className += " sticky-color";
+
+  var contentName =
+    document.getElementsByClassName("content")[0].children[1].children[1];
+
+  var contentDescription = document.getElementsByClassName(
+    "content-description"
+  )[0];
+
+  data_func(`technology`, `Launch vehicle`);
+}

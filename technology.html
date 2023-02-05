@@ -12,13 +12,78 @@
     />
 
     <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="resources/css/technology.css" />
   </head>
   <body>
-    00 Home 01 Destination 02 Crew 03 Technology 03 Space launch 101 1 2 3 The
-    terminology... Space capsule A space capsule is an often-crewed spacecraft
-    that uses a blunt-body reentry capsule to reenter the Earth's atmosphere
-    without wings. Our capsule is where you'll spend your time during the
-    flight. It includes a space gym, cinema, and plenty of other activities to
-    keep you entertained.
+    <div class="nav">
+      <div class="logo-wrapper">
+        <img src="resources/images/icons/logo.svg" alt="logo" />
+      </div>
+      <div class="nav__line"></div>
+      <ul class="nav-wrapper">
+        <li>
+          <a href="index.html"><span class="nav-wrapper__num">00</span> Home</a>
+        </li>
+        <li>
+          <a href="destinations.html"
+            ><span class="nav-wrapper__num">01</span> Destination</a
+          >
+        </li>
+        <li>
+          <a href="crews.html"><span class="nav-wrapper__num">02</span> Crew</a>
+        </li>
+        <li>
+          <a href="#"><span class="nav-wrapper__num">03</span> Technology</a>
+        </li>
+      </ul>
+      <!-- navigation button--- -->
+      <div class="nav-button" onclick="navigation()">
+        <img
+          src="resources/images/icons/icon-hamburger.svg"
+          alt="navigation_button"
+          class="button__open"
+        />
+        <img
+          src="resources/images/icons/icon-close.svg"
+          alt="navigation_button"
+          class="button__close"
+        />
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <h3>02 <span> space launch 101</span></h3>
+      <div class="content">
+        <div class="content-counting">
+          <div
+            class="counting__count"
+            onclick="subPage(`technology`,`Launch vehicle`);countColorFunc(0)"
+          >
+            1
+          </div>
+          <div
+            class="counting__count"
+            onclick="subPage(`technology`,`Spaceport`);countColorFunc(1)"
+          >
+            2
+          </div>
+          <div
+            class="counting__count"
+            onclick="subPage(`technology`,`Space capsule`);countColorFunc(2)"
+          >
+            3
+          </div>
+        </div>
+        <div class="inner-content">
+          <h2>the terminology...</h2>
+          <h1></h1>
+          <p class="content-description"></p>
+        </div>
+        <div class="content-vehicle"></div>
+      </div>
+    </div>
+
+    <script src="resources/js/node.js"></script>
+    <script src="resources/js/main.js"></script>
+    <script src="resources/js/html_link.js"></script>
   </body>
 </html>
