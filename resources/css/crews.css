@@ -131,7 +131,7 @@ body .nav-border {
   letter-spacing: 0.1em;
   color: var(--font-color1);
   font-weight: 500;
-  font-size: clamp(24px, 2vw, 5rem);
+  font-size: clamp(24px, 1.5vw, 3vh);
 }
 .content h3 span {
   color: var(--font-color2);
@@ -139,18 +139,18 @@ body .nav-border {
 .content .role {
   color: var(--font-color);
   font-family: var(--font-head3);
-  font-size: clamp(24px, 2.4vw, 5.5rem);
+  font-size: clamp(24px, 2.4vw, 4vh);
   font-weight: 400;
 }
 .content h1 {
   font-family: var(--font-head3);
   font-weight: 400;
   color: var(--font-color2);
-  font-size: clamp(30px, 4vw, 9rem);
+  font-size: clamp(30px, 4vw, 6vh);
 }
 .content__bio {
   margin-bottom: 15%;
-  font-size: clamp(18px, 1.6vw, 4rem);
+  font-size: clamp(18px, 1.6vw, 3vh);
   text-transform: none;
   line-height: 1.6em;
 }
