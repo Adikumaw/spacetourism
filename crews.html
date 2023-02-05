@@ -12,7 +12,7 @@
     />
 
     <title>Frontend Mentor | Space tourism website</title>
-    <link rel="stylesheet" href="resources/css/destinations.css" />
+    <link rel="stylesheet" href="resources/css/crews.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -29,10 +29,12 @@
           <a href="index.html"><span class="nav-wrapper__num">00</span> Home</a>
         </li>
         <li>
-          <a href="#"><span class="nav-wrapper__num">01</span> Destination</a>
+          <a href="destinations.html"
+            ><span class="nav-wrapper__num">01</span> Destination</a
+          >
         </li>
         <li>
-          <a href="crews.html"><span class="nav-wrapper__num">02</span> Crew</a>
+          <a href="#"><span class="nav-wrapper__num">02</span> Crew</a>
         </li>
         <li>
           <a href="#"><span class="nav-wrapper__num">03</span> Technology</a>
@@ -52,33 +54,32 @@
         />
       </div>
     </div>
-
     <div class="content-wrapper">
-      <div class="planet">
-        <h2>01<span>Pick your destination</span></h2>
-        <div class="planet-image"></div>
-      </div>
       <div class="content">
-        <ul>
-          <li class="" onclick="subPage(`destination`,`Moon`)">Moon</li>
-          <li class="" onclick="subPage(`destination`,`Mars`)">Mars</li>
-          <li class="" onclick="subPage(`destination`,`Europa`)">Europa</li>
-          <li class="" onclick="subPage(`destination`,`Titan`)">Titan</li>
-        </ul>
+        <h3>02 <span> Meet your crew</span></h3>
+        <h2 class="role"></h2>
         <h1></h1>
-        <p class="content__description"></p>
-        <div class="line"></div>
-        <div class="content-detail__wrapper">
-          <div class="content__distance">
-            <p>Avg. distance</p>
-            <h3></h3>
-          </div>
-          <div class="content__travel">
-            <p>Est. travel time</p>
-            <h3></h3>
-          </div>
+        <p class="content__bio"></p>
+        <div class="dot-wrapper">
+          <div
+            class="dot"
+            onclick="subPage(`crew`,`Douglas Hurley`); dotColorFunc(0)"
+          ></div>
+          <div
+            class="dot"
+            onclick="subPage(`crew`,`Mark Shuttleworth`); dotColorFunc(1)"
+          ></div>
+          <div
+            class="dot"
+            onclick="subPage(`crew`,`Victor Glover`); dotColorFunc(2)"
+          ></div>
+          <div
+            class="dot"
+            onclick="subPage(`crew`,`Anousheh Ansari`); dotColorFunc(3)"
+          ></div>
         </div>
       </div>
+      <div class="crew-member"></div>
     </div>
 
     <script src="resources/js/node.js"></script>

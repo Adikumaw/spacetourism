@@ -17,7 +17,7 @@ function data_func(type, name) {
           if (arrDataDest[i].name === name) {
             for (let i = 0; i < planetName.children.length; i++) {
               if (planetName.children[i].innerHTML === name) {
-                planetName.children[i].className = "border-bottom";
+                planetName.children[i].className = "sticky-color";
               } else {
                 planetName.children[i].className = "";
               }
@@ -37,7 +37,10 @@ function data_func(type, name) {
       } else if (type === "crew") {
         for (let i = 0; i < arrDataCrew.length; i++) {
           if (arrDataCrew[i].name === name) {
-            console.log(arrDataCrew[i]);
+            crewMemberImage.innerHTML = `<img src ="${arrDataCrew[i].images.png}" alt="crew_member_image"/>`;
+            contentRole.innerText = arrDataCrew[i].role;
+            contentHeading.innerText = arrDataCrew[i].name;
+            contentBio.innerText = arrDataCrew[i].bio;
           }
         }
       } else if (type === "technology") {

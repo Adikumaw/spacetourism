@@ -19,3 +19,12 @@ function subPage(type, name) {
   console.log(`${type} , ${name} .`);
   data_func(type, name);
 }
+function dotColorFunc(num) {
+  for (let i = 0; i < dotColor.length; i++) {
+    if (i == num) {
+      dotColor[i].className += " sticky-color";
+    } else {
+      dotColor[i].className = "dot";
+    }
+  }
+}
