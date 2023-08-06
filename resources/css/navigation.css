@@ -10,6 +10,8 @@
   --font_heading: "Bellefair", serif;
   --barlow_condensed: "Barlow Condensed", sans-serif;
   --btnhover-color: rgba(173, 190, 198, 0.308);
+
+  --font-univ: "Abel", sans-serif;
 }
 * {
   margin: 0;

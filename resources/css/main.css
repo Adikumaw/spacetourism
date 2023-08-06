@@ -12,8 +12,9 @@ body {
   background-size: cover;
   height: 95%;
   width: 100%;
-  font-family: var(--font-univ);
-  font-weight: 200;
+  /* font-family: var(--font-univ); */
+  font-family: var(--barlow_condensed);
+  font-weight: 300;
   color: var(--font_color);
   display: flex;
   flex-direction: column;
