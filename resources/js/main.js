@@ -6,20 +6,20 @@ if (exploreButton === undefined) {
   console.log("cant find");
 } else {
   // navigation tag color fix
-  var navName = document.getElementsByClassName("nav-wrapper")[0].children;
-  navName[0].children[0].className = "nav-border";
+  var navName = document.getElementsByClassName("nav-container_ul")[0].children;
+  navName[0].children[0].className = "nav-border_a";
 }
 
 function navigation() {
-  var navBar = document.getElementsByClassName("nav-wrapper")[0];
+  var navBar = document.getElementsByClassName("nav-container_ul")[0];
   var btnOpen = document.getElementsByClassName("button__open")[0];
   var btnClose = document.getElementsByClassName("button__close")[0];
-  if (navBar.className === "nav-wrapper") {
+  if (navBar.className === "nav-container_ul") {
     navBar.className += " nav-block";
     btnOpen.style.display = "none";
     btnClose.style.display = "block";
   } else {
-    navBar.className = "nav-wrapper";
+    navBar.className = "nav-container_ul";
     btnOpen.style.display = "block";
     btnClose.style.display = "none";
   }

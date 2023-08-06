@@ -8,7 +8,7 @@ if (planetImage === undefined) {
 } else {
   // ADDING BORDER BOTTOM TO THE CURRENT NAVIGATION TAB----------
   var navName = document.getElementsByClassName("nav-wrapper")[0].children;
-  navName[1].children[0].className = "nav-border";
+  navName[1].children[0].className = "nav-border_a";
   // VARIABLE DECLARATIONS FOR ADDING CONTENT TO HTML........
   var contentHeading = document.getElementsByTagName("h1")[0];
   var contentdescription = document.getElementsByClassName(
@@ -30,7 +30,7 @@ if (crewMemberImage === undefined) {
 } else {
   // navigation tag color fix
   var navName = document.getElementsByClassName("nav-wrapper")[0].children;
-  navName[2].children[0].className = "nav-border";
+  navName[2].children[0].className = "nav-border_a";
   // dotColor color fix
   var dotColor = document.getElementsByClassName("dot-wrapper")[0].children;
   dotColor[0].className += " sticky-color";
@@ -50,7 +50,7 @@ if (vehicleImage === undefined) {
 } else {
   // navigation tag color fix
   var navName = document.getElementsByClassName("nav-wrapper")[0].children;
-  navName[3].children[0].className = "nav-border";
+  navName[3].children[0].className = "nav-border_a";
   // dotColor color fix
   var countingColor =
     document.getElementsByClassName("content-counting")[0].children;
