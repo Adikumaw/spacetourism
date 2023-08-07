@@ -43,15 +43,15 @@ body {
   text-transform: uppercase;
   letter-spacing: 4.75px;
 }
-.content__heading {
+.content_heading {
   font-size: clamp(8rem, 4.2vw, 9rem);
   font-weight: 400;
-  color: var(--font-color2);
+  /* color: var(--font-color2); */
 }
 .content__para {
   font-size: 1.2rem;
 }
-.content__heading,
+.content_heading,
 .button {
   font-family: var(--font_heading);
   text-transform: uppercase;
@@ -111,7 +111,7 @@ body {
     align-items: center;
     width: min-content;
   }
-  .content__heading {
+  .content_heading {
     font-size: clamp(8rem, 20vw, 10rem);
   }
   .content__para {
@@ -166,7 +166,7 @@ body {
   .content {
     width: auto;
   }
-  .content__heading {
+  .content_heading {
     font-size: clamp(6.5rem, 20vw, 10rem);
   }
   .buttom-container {
