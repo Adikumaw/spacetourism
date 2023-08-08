@@ -16,27 +16,35 @@
     <link rel="stylesheet" href="resources/css/destinations.css" />
   </head>
   <body>
-    <div class="nav">
+    <div class="navigation-bar">
       <div class="logo-wrapper">
         <img src="resources/images/icons/logo.svg" alt="logo" />
       </div>
       <div class="nav__line"></div>
-      <ul class="nav-wrapper">
-        <li>
-          <a href="index.html"><span class="nav-wrapper__num">00</span> Home</a>
-        </li>
-        <li>
-          <a href="#"><span class="nav-wrapper__num">01</span> Destination</a>
-        </li>
-        <li>
-          <a href="crews.html"><span class="nav-wrapper__num">02</span> Crew</a>
-        </li>
-        <li>
-          <a href="technology.html"
-            ><span class="nav-wrapper__num">03</span> Technology</a
-          >
-        </li>
-      </ul>
+      <div class="nav-container">
+        <ul class="nav-container_ul">
+          <li>
+            <a href="index.html"
+              ><span class="nav-container-ul_span">00</span> Home</a
+            >
+          </li>
+          <li class="nav-border">
+            <a class="nav-border_a" href="#"
+              ><span class="nav-container-ul_span">01</span> Destination</a
+            >
+          </li>
+          <li>
+            <a href="crews.html"
+              ><span class="nav-container-ul_span">02</span> Crew</a
+            >
+          </li>
+          <li>
+            <a href="technology.html"
+              ><span class="nav-container-ul_span">03</span> Technology</a
+            >
+          </li>
+        </ul>
+      </div>
       <!-- navigation button--- -->
       <div class="nav-button" onclick="navigation()">
         <img
@@ -52,9 +60,9 @@
       </div>
     </div>
 
+    <h2 class="title"><span>01</span>Pick your destination</h2>
     <div class="content-wrapper">
       <div class="planet">
-        <h2>01<span>Pick your destination</span></h2>
         <div class="planet-image"></div>
       </div>
       <div class="content">
@@ -64,16 +72,16 @@
           <li class="" onclick="subPage(`destination`,`Europa`)">Europa</li>
           <li class="" onclick="subPage(`destination`,`Titan`)">Titan</li>
         </ul>
-        <h1></h1>
-        <p class="content__description"></p>
+        <h1 class="content_heading"></h1>
+        <p class="content_description"></p>
         <div class="line"></div>
         <div class="content-detail__wrapper">
-          <div class="content__distance">
-            <p>Avg. distance</p>
+          <div class="content-detail_distance">
+            <h4>Avg. distance</h4>
             <h3></h3>
           </div>
-          <div class="content__travel">
-            <p>Est. travel time</p>
+          <div class="content-detail_travel">
+            <h4>Est. travel time</h4>
             <h3></h3>
           </div>
         </div>

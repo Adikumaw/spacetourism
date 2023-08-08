@@ -7,15 +7,19 @@ if (planetImage === undefined) {
   console.log("cant find");
 } else {
   // ADDING BORDER BOTTOM TO THE CURRENT NAVIGATION TAB----------
-  var navName = document.getElementsByClassName("nav-wrapper")[0].children;
-  navName[1].children[0].className = "nav-border_a";
+  // var navName = document.getElementsByClassName("nav-wrapper")[0].children;
+  // navName[1].children[0].className = "nav-border_a";
   // VARIABLE DECLARATIONS FOR ADDING CONTENT TO HTML........
   var contentHeading = document.getElementsByTagName("h1")[0];
   var contentdescription = document.getElementsByClassName(
-    "content__description"
+    "content_description"
   )[0];
-  var contentDistance = document.getElementsByClassName("content__distance")[0];
-  var contentTravel = document.getElementsByClassName("content__travel")[0];
+  var contentDistance = document.getElementsByClassName(
+    "content-detail_distance"
+  )[0];
+  var contentTravel = document.getElementsByClassName(
+    "content-detail_travel"
+  )[0];
   // CONTENT LI ITEMS VARIABLE FOR BORDER BOTTOM....
   var planetName = document.getElementsByClassName("content")[0].children[0];
   // CALLING resources/js/node.js FOR DATA EXTRACTION....
