@@ -45,30 +45,12 @@ function data_func(type, name) {
       } else if (type === "technology") {
         for (let i = 0; i < arrDataTech.length; i++) {
           if (arrDataTech[i].name === name) {
-            contentName.innerText = arrDataTech[i].name;
+            contentHeading.innerText = arrDataTech[i].name;
             contentDescription.innerText = arrDataTech[i].description;
-            vehicleImage.innerHTML = `<img class="vehicle__port" src="${arrDataTech[i].images.portrait}" alt="vehicle_image">
-            <img class="vehicle__land" src="${arrDataTech[i].images.landscape}" alt="vehicle_image">`;
+            vehicleImage.innerHTML = `<img class="vehicle_port" src="${arrDataTech[i].images.portrait}" alt="vehicle_image">
+            <img class="vehicle_land" src="${arrDataTech[i].images.landscape}" alt="vehicle_image">`;
           }
         }
       }
-
-      // for (var i = 0; i < arrDataDest.length; i++) {
-      //   console.log(arrDataDest[i].name);
-      //   console.log(arrDataDest[i].description);
-      //   console.log(arrDataDest[i].distance);
-      // }
-
-      // for (var i = 0; i < arrDataTech.length; i++) {
-      //   console.log(arrDataTech[i].name);
-      //   console.log(arrDataTech[i].images);
-      //   console.log(arrDataTech[i].description);
-      // }
-
-      // for (var i = 0; i < arrDataCrew.length; i++) {
-      //   console.log(arrDataCrew[i].name);
-      //   console.log(arrDataCrew[i].role);
-      //   console.log(arrDataCrew[i].bio);
-      // }
     });
 }
