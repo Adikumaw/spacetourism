@@ -1,17 +1,15 @@
 html {
   min-height: 100vh;
   min-width: 350px;
-  display: grid;
-  place-items: end;
+  display: flex;
+  padding-top: 3%;
 }
 body {
   background-image: url(images/destination_bg/background-destination-desktop.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 95%;
   width: 100%;
-  /* font-family: var(--font-univ); */
   font-family: var(--barlow_condensed);
   font-weight: 300;
   color: var(--font_color);
@@ -36,7 +34,7 @@ body {
   display: flex;
   align-items: center;
 }
-h2 span {
+.title span {
   color: var(--font-color);
   font-weight: 600;
   letter-spacing: 0.2em;
@@ -88,7 +86,7 @@ h2 span {
   border-bottom: 2px solid var(--font_color) !important;
   color: var(--font-color2) !important;
 }
-.content_heading {
+.content-main_heading {
   text-transform: uppercase;
   font-family: var(--font_heading);
   font-size: clamp(7rem, 4vw, 8rem);
@@ -132,10 +130,10 @@ h2 span {
   html {
     min-height: 100%;
     height: auto;
+    padding-top: 0;
   }
   body {
     background-image: url(images/destination_bg/background-destination-tablet.jpg);
-    height: 100%;
   }
   .title {
     margin: 5% 0 0 5%;
@@ -156,7 +154,7 @@ h2 span {
     margin-top: 10%;
     padding-left: 0;
   }
-  .content_heading {
+  .content-main_heading {
     margin: 5% 0;
   }
   .content_description {
@@ -186,7 +184,7 @@ h2 span {
     min-height: 100%;
     height: auto;
   }
-  html body {
+  body {
     background-image: url(images/destination_bg/background-destination-mobile.jpg);
   }
   .content {

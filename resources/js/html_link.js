@@ -32,39 +32,35 @@ if (crewMemberImage === undefined) {
   // EXEPTION...
   console.log("cant find");
 } else {
-  // navigation tag color fix
-  var navName = document.getElementsByClassName("nav-wrapper")[0].children;
-  navName[2].children[0].className = "nav-border_a";
   // dotColor color fix
   var dotColor = document.getElementsByClassName("dot-wrapper")[0].children;
   dotColor[0].className += " sticky-color";
 
-  var contentRole = document.getElementsByClassName("role")[0];
-  var contentHeading =
-    document.getElementsByClassName("content")[0].children[2];
-  var contentBio = document.getElementsByClassName("content__bio")[0];
+  var contentRole = document.getElementsByClassName("content-main_role")[0];
+  var contentHeading = document.getElementsByClassName(
+    "content-main_heading"
+  )[0];
+  var contentBio = document.getElementsByClassName("content-main_bio")[0];
 
   data_func(`crew`, `Douglas Hurley`);
 }
 // CREW HTML OBJECT LINKS------
-var vehicleImage = document.getElementsByClassName("content-vehicle")[0];
+var vehicleImage = document.getElementsByClassName("vehicle")[0];
 if (vehicleImage === undefined) {
   // EXEPTION...
   console.log("cant find");
 } else {
-  // navigation tag color fix
-  var navName = document.getElementsByClassName("nav-wrapper")[0].children;
-  navName[3].children[0].className = "nav-border_a";
   // dotColor color fix
   var countingColor =
     document.getElementsByClassName("content-counting")[0].children;
   countingColor[0].className += " sticky-color";
 
-  var contentName =
-    document.getElementsByClassName("content")[0].children[1].children[1];
+  var contentHeading = document.getElementsByClassName(
+    "content-main_heading"
+  )[0];
 
   var contentDescription = document.getElementsByClassName(
-    "content-description"
+    "content-main_description"
   )[0];
 
   data_func(`technology`, `Launch vehicle`);

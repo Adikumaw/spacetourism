@@ -1,18 +1,15 @@
 html {
   min-height: 100vh;
-  height: 110%;
   min-width: 350px;
-  display: grid;
-  place-items: end;
+  display: flex;
+  padding-top: 3%;
 }
 body {
   background-image: url(images/home_bg/background-home-desktop.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 95%;
   width: 100%;
-  /* font-family: var(--font-univ); */
   font-family: var(--barlow_condensed);
   font-weight: 300;
   color: var(--font_color);
@@ -43,15 +40,14 @@ body {
   text-transform: uppercase;
   letter-spacing: 4.75px;
 }
-.content_heading {
+.content-main_heading {
   font-size: clamp(8rem, 4.2vw, 9rem);
   font-weight: 400;
-  /* color: var(--font-color2); */
 }
 .content__para {
   font-size: 1.2rem;
 }
-.content_heading,
+.content-main_heading,
 .button {
   font-family: var(--font_heading);
   text-transform: uppercase;
@@ -94,11 +90,11 @@ body {
 @media screen and (max-width: 1024px) {
   html {
     min-height: 100%;
+    padding-top: 0;
     height: auto;
   }
   body {
     background-image: url(images/home_bg/background-home-tablet.jpg);
-    height: 100%;
   }
   .content-wrapper {
     flex: 1;
@@ -111,7 +107,7 @@ body {
     align-items: center;
     width: min-content;
   }
-  .content_heading {
+  .content-main_heading {
     font-size: clamp(8rem, 20vw, 10rem);
   }
   .content__para {
@@ -166,7 +162,7 @@ body {
   .content {
     width: auto;
   }
-  .content_heading {
+  .content-main_heading {
     font-size: clamp(6.5rem, 20vw, 10rem);
   }
   .buttom-container {

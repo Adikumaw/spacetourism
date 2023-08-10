@@ -45,7 +45,7 @@ function countColorFunc(num) {
     if (i == num) {
       countingColor[i].className += " sticky-color";
     } else {
-      countingColor[i].className = "counting__count";
+      countingColor[i].className = "counting_count";
     }
   }
 }
