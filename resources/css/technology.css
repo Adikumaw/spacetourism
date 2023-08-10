@@ -1,143 +1,222 @@
 html {
-  width: 100vw;
-  min-height: calc(100vw / 1.77);
+  min-height: 100vh;
+  min-width: 350px;
+  display: flex;
+  padding-top: 3%;
 }
 body {
   background-image: url(images/technology_bg/background-technology-desktop.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  height: 100%;
-  font-family: var(--font-univ);
-  font-weight: 200;
-  color: var(--font-color);
+  width: 100%;
+  font-family: var(--barlow_condensed);
+  font-weight: 300;
+  color: var(--font_color);
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  overflow: hidden;
+  justify-content: space-between;
+}
+/*  CONTENT BLOCK AND EXPLORE BUTTON ------------------------------------ */
+.title_1,
+.title,
+.content-main_subheading,
+.content-main_heading {
+  text-transform: uppercase;
+}
+.title {
+  margin: 2% 0 0 10%;
+  text-transform: uppercase;
+  letter-spacing: 4.75px;
+  font-weight: 400;
+  height: 4rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+.title_1 {
+  display: none;
+  margin: 2% 0;
+}
+.title_1 span,
+.title span {
+  color: var(--font-color);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  margin-right: 1rem;
 }
 .content-wrapper {
-  text-transform: uppercase;
+  margin: 0 0 5% 10%;
   display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-  height: calc(100vh - 100px);
-}
-.content-wrapper h3 {
-  word-spacing: 0.5em;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  font-size: clamp(24px, 1.5vw, 3vh);
-  color: var(--font-color1);
-  padding-left: 9%;
-}
-.content-wrapper h3 span {
-  color: var(--font-color2);
+  flex: 2;
+  justify-content: space-between;
 }
 .content {
-  display: grid;
-  grid-template-rows: 1;
-  grid-template-columns: 12% 42% 38%;
-  grid-template-areas:
-    "count cont vehicle"
-    "count cont vehicle"
-    "count cont vehicle";
-  grid-column-gap: 4%;
-  padding: 0 0 4% 4%;
-  flex: 1;
-  height: calc(100vh - 135px);
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1 55%;
 }
 .content-counting {
-  grid-area: count;
-  display: grid;
-  grid-template-rows: 3;
-  grid-row-gap: 2em;
-  place-items: center;
-  place-content: center;
-}
-.counting__count {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 1px solid var(--font-color1);
-  color: var(--font-color2);
-  display: grid;
-  place-items: center;
-}
-.counting__count:hover,
-.sticky-color {
-  border-color: var(--font-color2);
-  color: var(--font-color4);
-  background-color: var(--font-color2);
-}
-.inner-content {
-  grid-area: cont;
-  display: grid;
-  grid-template-rows: 3;
-  grid-row-gap: 1em;
-  place-content: center;
-}
-.inner-content h1 {
-  font-family: var(--font-head3);
-  font-weight: 400;
-  color: var(--font-color2);
-  font-size: clamp(30px, 4vw, 7vh);
-}
-.inner-content h2,
-.content-description {
-  font-size: clamp(17px, 1.5vw, 2vh);
-  line-height: 1.6em;
-}
-.content-description {
-  text-transform: none;
-  width: 80%;
-}
-.content-vehicle {
-  grid-area: vehicle;
   display: flex;
-  justify-content: flex-end;
-  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
 }
-.vehicle__port {
-  display: block;
+.counting_count {
+  display: grid;
+  place-items: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 0.1rem solid var(--btnhover-color);
+  font-family: var(--font_heading);
+  font-size: clamp(1.7rem, 3vw, 2rem);
 }
-.vehicle__land {
+.counting_count:hover {
+  border-color: var(--font-color);
+}
+.sticky-color {
+  background-color: var(--font_color) !important;
+  color: var(--backgroud);
+}
+.content-main {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 80%;
+  justify-content: center;
+}
+.content-main_subheading {
+  color: var(--font-color);
+  font-family: var(--font_heading);
+  font-weight: 400;
+}
+.content-main_heading {
+  margin: 4% 0;
+  font-family: var(--font_heading);
+  font-weight: 400;
+  font-size: clamp(3.5rem, 4vw, 5rem);
+}
+.content-main_subheading,
+.content-main_description {
+  color: var(--font-color);
+  line-height: 1.6em;
+  font-size: clamp(1.4rem, 1.7vw, 5rem);
+}
+.content-main_description {
+  padding-right: 5%;
+}
+.vehicle_land {
   display: none;
 }
-.content-vehicle {
+.vehicle {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex: 0 1 40%;
+}
+.vehicle img {
   height: 100%;
+  max-height: 100%;
   max-width: 100%;
   object-fit: contain;
 }
-/*  CONTENT BLOCK AND EXPLORE BUTTON ------------------------------------ */
 
 @media screen and (max-width: 1024px) {
   html {
+    min-height: 100%;
     height: auto;
+    padding-top: 0;
   }
   body {
     background-image: url(images/technology_bg/background-technology-tablet.jpg);
-    min-height: 900px;
-    min-width: 520px;
+  }
+  .title {
+    margin: 2% 0 0 5%;
   }
   .content-wrapper {
-    height: 100%;
-    margin-top: 65px;
     flex-direction: column;
-    justify-content: space-evenly;
+    margin: 0 0 5% 0;
     align-items: center;
+  }
+  .vehicle_port {
+    display: none;
+  }
+  .vehicle_land {
+    display: block;
+  }
+  .vehicle {
+    margin: 5% 0;
+    width: 100%;
+  }
+  .vehicle img {
+    width: 100%;
+  }
+  .content {
+    order: 3;
+    flex-direction: column;
+    width: 60%;
+  }
+  .content-counting {
+    flex-direction: row;
+    align-items: center;
+  }
+  .counting_count {
+    margin: 0;
+  }
+  .counting_count:not(:last-of-type) {
+    margin-right: 1rem;
+  }
+  .content-main {
+    align-items: center;
+    margin: 5% 0;
+  }
+  .content-main_description {
+    text-align: center;
+    padding: 0;
   }
 }
 @media screen and (max-width: 820px) {
+  .counting_count {
+    width: 4rem;
+    height: 4rem;
+    font-size: clamp(1.3rem, 3vw, 1.7rem);
+  }
+  .content-main_heading {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    text-align: center;
+  }
+  .content-main_subheading {
+    font-size: clamp(1.2rem, 3vw, 1.4rem);
+  }
+  .content {
+    width: 70%;
+  }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 670px) {
+  .content {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 520px) {
-  html body {
+  body {
     background-image: url(images/technology_bg/background-technology-mobile.jpg);
-    min-width: 350px;
-    min-height: 750px;
+  }
+  .counting_count {
+    width: 3rem;
+    height: 3rem;
+  }
+  .title {
+    margin: 2% 0 0 0;
+    justify-content: center;
+  }
+  .content {
+    width: 90%;
+  }
+  .content-main_heading {
+    font-size: clamp(2rem, 7vw, 2.5rem);
+  }
+  .content-main_description {
+    font-size: clamp(1.2rem, 1.7vw, 1.4rem);
   }
 }
 @media screen and (max-width: 455px) {
