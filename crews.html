@@ -16,29 +16,35 @@
     <link rel="stylesheet" href="resources/css/crews.css" />
   </head>
   <body>
-    <div class="nav">
+    <div class="navigation-bar">
       <div class="logo-wrapper">
         <img src="resources/images/icons/logo.svg" alt="logo" />
       </div>
       <div class="nav__line"></div>
-      <ul class="nav-wrapper">
-        <li>
-          <a href="index.html"><span class="nav-wrapper__num">00</span> Home</a>
-        </li>
-        <li>
-          <a href="destinations.html"
-            ><span class="nav-wrapper__num">01</span> Destination</a
-          >
-        </li>
-        <li>
-          <a href="#"><span class="nav-wrapper__num">02</span> Crew</a>
-        </li>
-        <li>
-          <a href="technology.html"
-            ><span class="nav-wrapper__num">03</span> Technology</a
-          >
-        </li>
-      </ul>
+      <div class="nav-container">
+        <ul class="nav-container_ul">
+          <li>
+            <a href="index.html"
+              ><span class="nav-container-ul_span">00</span> Home</a
+            >
+          </li>
+          <li>
+            <a href="destinations.html"
+              ><span class="nav-container-ul_span">01</span> Destination</a
+            >
+          </li>
+          <li class="nav-border">
+            <a class="nav-border_a" href="#"
+              ><span class="nav-container-ul_span">02</span> Crew</a
+            >
+          </li>
+          <li>
+            <a href="technology.html"
+              ><span class="nav-container-ul_span">03</span> Technology</a
+            >
+          </li>
+        </ul>
+      </div>
       <!-- navigation button--- -->
       <div class="nav-button" onclick="navigation()">
         <img
@@ -53,12 +59,16 @@
         />
       </div>
     </div>
+
+    <h2 class="title_1"><span>02</span>Meet your crew</h2>
     <div class="content-wrapper">
       <div class="content">
-        <h3>02 <span> Meet your crew</span></h3>
-        <h2 class="role"></h2>
-        <h1></h1>
-        <p class="content__bio"></p>
+        <h2 class="title"><span>02</span>Meet your crew</h2>
+        <div class="content-main">
+          <h2 class="content-main_role"></h2>
+          <h1 class="content-main_heading"></h1>
+          <p class="content-main_bio"></p>
+        </div>
         <div class="dot-wrapper">
           <div
             class="dot"
