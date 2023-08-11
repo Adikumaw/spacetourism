@@ -64,7 +64,8 @@
   height: 100%;
   width: 46rem;
   right: 0;
-  backdrop-filter: brightness(140%) blur(40px) contrast(1);
+  /* backdrop-filter: brightness(140%) blur(40px) contrast(1); */
+  backdrop-filter: brightness(90%) blur(40px) contrast(0.9) saturate(1.5);
 }
 .nav-container_ul li {
   display: block;
