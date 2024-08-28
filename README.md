@@ -1,102 +1,107 @@
-# Frontend Mentor - Space tourism website solution
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+# Space Tourism Website
 
 ## Overview
+The Space Tourism Website is a fully front-end project that offers users an immersive experience of space exploration. Designed with a beautiful dark space theme, this website dynamically loads content using JavaScript, allowing users to explore various aspects of space tourism, including planets, spaceships, and astronauts.
 
-### The challenge
+## Features
+- **Dark Space Theme**: A visually captivating dark theme that enhances the space exploration experience.
+- **Dynamic Content Loading**: JavaScript is used to load content dynamically, ensuring a seamless and interactive user experience.
+- **Responsive Design**: Utilizes Flexbox and Grid layouts to provide a responsive design across different devices and screen sizes.
+- **Rich Content**: Explore detailed sections dedicated to crews, destinations, and technologies involved in space tourism.
 
-Users should be able to:
+## Technologies Used
+- **HTML5**: Semantic HTML5 elements are used for structuring the website.
+- **CSS3**: Custom styles are applied through CSS3, with Flexbox and Grid for responsive layouts.
+- **JavaScript**: Handles dynamic content loading and other interactive functionalities.
+- **JSON**: Used for storing and managing the data for the website.
 
-- View the optimal layout for each of the website's pages depending on their device's screen size
-- See hover states for all interactive elements on the page
-- View each page and be able to toggle between the tabs to see new information
-
-### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
-
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
+## Project Structure
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+Space-Tourism-Website/
+├── crews.html
+├── destination.html
+├── index.html
+├── technology.html
+├── resources/
+│   ├── css/
+│   │   ├── crews.css
+│   │   ├── destination.css
+│   │   ├── main.css
+│   │   ├── navigation.css
+│   │   ├── technology.css
+│   ├── data/
+│   │   └── data.json
+│   ├── images/
+│   │   ├── crew/
+│   │   ├── destination/
+│   │   ├── icons/
+│   │   ├── technology/
+│   │   └── favicon.ico
+│   ├── js/
+│       ├── html_link.js
+│       ├── main.js
+│       └── node.js
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+### Files and Directories:
+- **HTML Files**:
+  - `crews.html`: Contains details about the crew members involved in space tourism.
+  - `destination.html`: Provides information about space destinations.
+  - `index.html`: The homepage, introducing the concept of space tourism.
+  - `technology.html`: Covers the technologies used in space travel.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+- **CSS Files** (`resources/css/`):
+  - `crews.css`: Styles for the crew section.
+  - `destination.css`: Styles for the destination section.
+  - `main.css`: Global styles applied across the website.
+  - `navigation.css`: Styles for the navigation bar.
+  - `technology.css`: Styles for the technology section.
 
-### Continued development
+- **JavaScript Files** (`resources/js/`):
+  - `html_link.js`: Handles dynamic linking of HTML content.
+  - `main.js`: Contains the primary JavaScript logic for dynamic content loading.
+  - `node.js`: Manages node-based interactions on the website.
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- **Data File** (`resources/data/`):
+  - `data.json`: Stores the data related to crew members, destinations, and technologies used across the website.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- **Images** (`resources/images/`):
+  - `crew/`: Images of crew members.
+  - `destination/`: Images of space destinations.
+  - `icons/`: Various icons used throughout the website.
+  - `technology/`: Images related to space technology.
+  - `favicon.ico`: The website’s favicon.
 
-### Useful resources
+## Demo
+Check out the live demo of the Space Tourism Website [here](https://adikumaw.github.io/spacetourism/).
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+## Installation & Usage
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Adikumaw/space-tourism-website.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd space-tourism-website
+   ```
+3. Open `index.html` in your preferred web browser:
+   ```bash
+   open index.html
+   ```
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+## Screenshots
+![Home Page](https://github.com/Adikumaw/spacetourism/blob/main/demo-screnshots/home.png)
+![Destination Page](https://github.com/Adikumaw/spacetourism/blob/main/demo-screnshots/destination.png)
+![Crew Page](https://github.com/Adikumaw/spacetourism/blob/main/demo-screnshots/crew.png)
+![Technology Page](https://github.com/Adikumaw/spacetourism/blob/main/demo-screnshots/technology.png)
 
-## Author
+## Contributing
+Contributions are welcome! Feel free to fork this repository and submit a pull request with your improvements or new features.
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+## Contact
+For any questions or suggestions, you can reach out via:
+- **Email**: kumawataditya105@gmail.com
+- **GitHub**: [Adikumaw](https://github.com/Adikumaw)
