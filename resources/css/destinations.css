@@ -1,0 +1,203 @@
+html {
+  min-height: 100vh;
+  min-width: 350px;
+  display: flex;
+  padding-top: 3%;
+}
+body {
+  background-image: url(images/destination_bg/background-destination-desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  font-family: var(--barlow_condensed);
+  font-weight: 300;
+  color: var(--font_color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/*  CONTENT BLOCK AND EXPLORE BUTTON ------------------------------------ */
+.content-wrapper {
+  padding: 5% 5% 8% 5%;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+.title {
+  margin: 2% 0 0 10%;
+  text-transform: uppercase;
+  letter-spacing: 4.75px;
+  font-weight: 400;
+  height: 4rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+.title span {
+  color: var(--font-color);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  margin-right: 1rem;
+}
+.planet {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
+.planet-image {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.planet-image img {
+  max-width: 100%;
+  min-width: 80%;
+  max-height: 100%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding-left: 15%;
+}
+.content ul {
+  display: flex;
+  list-style: none;
+}
+.content ul li {
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--font-color);
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid transparent;
+}
+.content ul li:not(:last-of-type) {
+  margin-right: 2em;
+}
+.content ul li:hover {
+  border-bottom: 2px solid var(--font-color);
+}
+.sticky-color {
+  border-bottom: 2px solid var(--font_color) !important;
+  color: var(--font-color2) !important;
+}
+.content-main_heading {
+  text-transform: uppercase;
+  font-family: var(--font_heading);
+  font-size: clamp(7rem, 4vw, 8rem);
+  font-weight: 400;
+}
+.content_description {
+  color: var(--font-color);
+  line-height: 1.6em;
+  font-size: clamp(1.2rem, 1.5vw, 5rem);
+}
+.line {
+  height: 0.08rem;
+  background-color: rgb(86, 86, 86);
+  margin: 0.5rem 0;
+  width: 100%;
+}
+.content-detail__wrapper {
+  text-transform: uppercase;
+  display: flex;
+}
+.content-detail_distance,
+.content-detail_travel {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content-detail__wrapper h4 {
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+}
+.content-detail__wrapper h3 {
+  font-weight: 300;
+  font-family: var(--font_heading);
+  font-size: 2rem;
+  color: var(--font_color);
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    min-height: 100%;
+    height: auto;
+    padding-top: 0;
+  }
+  body {
+    background-image: url(images/destination_bg/background-destination-tablet.jpg);
+  }
+  .title {
+    margin: 5% 0 0 5%;
+  }
+  .content-wrapper {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .planet {
+    width: 60%;
+    justify-content: center;
+  }
+  .content {
+    flex: 2;
+    width: 75%;
+    align-items: center;
+    margin-top: 10%;
+    padding-left: 0;
+  }
+  .content-main_heading {
+    margin: 5% 0;
+  }
+  .content_description {
+    text-align: center;
+    letter-spacing: 0.04rem;
+  }
+  .line {
+    margin: 3rem 0;
+  }
+  .content-detail__wrapper {
+    width: 100%;
+  }
+  .content-detail_distance,
+  .content-detail_travel {
+    align-items: center;
+  }
+  .content-detail__wrapper h3 {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 820px) {
+}
+@media screen and (max-width: 720px) {
+}
+@media screen and (max-width: 520px) {
+  html {
+    min-height: 100%;
+    height: auto;
+  }
+  body {
+    background-image: url(images/destination_bg/background-destination-mobile.jpg);
+  }
+  .content {
+    width: 90%;
+  }
+  .content-detail__wrapper {
+    flex-direction: column;
+  }
+  .content-detail_travel {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 455px) {
+}
+@media screen and (max-width: 400px) {
+}

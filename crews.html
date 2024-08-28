@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="resources/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="resources/css/navigation.css" />
+    <link rel="stylesheet" href="resources/css/crews.css" />
+  </head>
+  <body>
+    <div class="navigation-bar">
+      <div class="logo-wrapper">
+        <img src="resources/images/icons/logo.svg" alt="logo" />
+      </div>
+      <div class="nav__line"></div>
+      <div class="nav-container">
+        <ul class="nav-container_ul">
+          <li>
+            <a href="index.html"
+              ><span class="nav-container-ul_span">00</span> Home</a
+            >
+          </li>
+          <li>
+            <a href="destinations.html"
+              ><span class="nav-container-ul_span">01</span> Destination</a
+            >
+          </li>
+          <li class="nav-border">
+            <a class="nav-border_a" href="#"
+              ><span class="nav-container-ul_span">02</span> Crew</a
+            >
+          </li>
+          <li>
+            <a href="technology.html"
+              ><span class="nav-container-ul_span">03</span> Technology</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- navigation button--- -->
+      <div class="nav-button" onclick="navigation()">
+        <img
+          src="resources/images/icons/icon-hamburger.svg"
+          alt="navigation_button"
+          class="button__open"
+        />
+        <img
+          src="resources/images/icons/icon-close.svg"
+          alt="navigation_button"
+          class="button__close"
+        />
+      </div>
+    </div>
+
+    <h2 class="title_1"><span>02</span>Meet your crew</h2>
+    <div class="content-wrapper">
+      <div class="content">
+        <h2 class="title"><span>02</span>Meet your crew</h2>
+        <div class="content-main">
+          <h2 class="content-main_role"></h2>
+          <h1 class="content-main_heading"></h1>
+          <p class="content-main_bio"></p>
+        </div>
+        <div class="dot-wrapper">
+          <div
+            class="dot"
+            onclick="subPage(`crew`,`Douglas Hurley`); dotColorFunc(0)"
+          ></div>
+          <div
+            class="dot"
+            onclick="subPage(`crew`,`Mark Shuttleworth`); dotColorFunc(1)"
+          ></div>
+          <div
+            class="dot"
+            onclick="subPage(`crew`,`Victor Glover`); dotColorFunc(2)"
+          ></div>
+          <div
+            class="dot"
+            onclick="subPage(`crew`,`Anousheh Ansari`); dotColorFunc(3)"
+          ></div>
+        </div>
+      </div>
+      <div class="crew-member"></div>
+    </div>
+
+    <script src="resources/js/node.js"></script>
+    <script src="resources/js/main.js"></script>
+    <script src="resources/js/html_link.js"></script>
+  </body>
+</html>

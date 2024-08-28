@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Aboreto&family=Cinzel:wght@400;500;600;700;800&family=Viaoda+Libre&family=Vollkorn&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,300&family=Bellefair&display=swap");
+:root {
+  font-size: clamp(14px, 1.2vw, 38px);
+
+  --subheading: hsl(231, 77%, 90%);
+  --font_color: hsl(0, 0%, 100%);
+  --font-color: #adbec6;
+  --backgroud: hsl(230, 35%, 7%);
+  --font_heading: "Bellefair", serif;
+  --barlow_condensed: "Barlow Condensed", sans-serif;
+  --btnhover-color: rgba(173, 190, 198, 0.308);
+
+  --font-univ: "Abel", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*  NAVIGATION BAR ------------------------------------ */
+.navigation-bar {
+  flex-shrink: 0;
+  position: relative;
+  width: 100%;
+  height: 5rem;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.logo-wrapper {
+  width: 5rem;
+  height: 60%;
+  display: flex;
+  align-items: center;
+}
+.logo-wrapper img {
+  height: 100%;
+}
+.nav__line {
+  height: 0.1rem;
+  background-color: rgb(86, 86, 86);
+  flex: 1;
+}
+
+.nav-container_ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* ----- NAVIGATION BUTTON ----- */
+.nav-button {
+  display: none;
+}
+.nav-button .button__close {
+  display: none;
+}
+.nav-container_ul::before {
+  z-index: -1;
+  position: absolute;
+  content: ".";
+  font-size: 0;
+  height: 100%;
+  width: 46rem;
+  right: 0;
+  /* backdrop-filter: brightness(140%) blur(40px) contrast(1); */
+  backdrop-filter: brightness(90%) blur(40px) contrast(0.9) saturate(1.5);
+}
+.nav-container_ul li {
+  display: block;
+}
+.nav-container-ul_span {
+  font-weight: 900;
+}
+.nav-container_ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: clamp(1.2rem, 1.4vw, 1.2rem);
+  color: inherit;
+  margin: 1.5em;
+  padding-bottom: clamp(1.5rem, 1.9vw, 1.67rem);
+}
+.nav-container_ul:first-child {
+  margin-left: 0.5rem;
+}
+.nav-container_ul:last-child {
+  margin-right: 4rem;
+}
+.nav-container_ul li a:hover {
+  border-bottom: 3px solid var(--font-color);
+}
+body .nav-border_a {
+  pointer-events: none;
+  border-bottom: 3px solid var(--font_color);
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    font-size: clamp(14px, 1.5vw, 18px);
+  }
+  .nav__line {
+    display: none;
+  }
+  .navigation-bar {
+    height: 7rem;
+    justify-content: space-between;
+  }
+  .nav-container_ul li a {
+    padding-bottom: clamp(2.5rem, 1.9vw, 2.65rem);
+  }
+  .nav-container_ul::before {
+    width: 43rem;
+  }
+  .nav-container_ul:last-child {
+    margin-right: 3rem;
+  }
+}
+@media screen and (max-width: 820px) {
+  body {
+    position: relative;
+  }
+  .navigation-bar {
+    position: static;
+    padding-right: 3rem;
+    margin-top: 2rem;
+  }
+  .nav-container_ul {
+    align-items: start;
+    margin: 0 !important ;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    justify-content: start;
+    display: none;
+  }
+  .nav-container_ul::before {
+    z-index: 0;
+    top: 0;
+    width: 110%;
+  }
+  .nav-container_ul li {
+    z-index: 1;
+    font-size: clamp(1.3rem, 4.2vw, 1.2rem);
+    width: 98%;
+    margin: 1rem 0;
+    padding: 1rem 0;
+  }
+  .nav-container_ul:first-child {
+    padding-top: 8rem;
+  }
+  body .nav-border_a {
+    border-bottom: none;
+  }
+  .nav-container_ul li a:hover,
+  .nav-container_ul li a:active .nav-border_a {
+    border-bottom: none !important;
+    color: var(--font-color2) !important;
+  }
+  /* adding border to li element */
+  .nav-border {
+    pointer-events: none;
+    border-right: 4px solid var(--font_color);
+  }
+  .nav-container_ul li:hover {
+    border-right: 4px solid var(--font-color);
+  }
+  .nav-block {
+    display: flex;
+  }
+  /* ----- NAVIGATION BUTTON ----- */
+  .nav-button {
+    z-index: 2;
+    display: grid;
+    place-items: center;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  :root {
+    font-size: clamp(14px, 1.5vw, 18px);
+  }
+  .navigation-bar {
+    margin-top: 1rem;
+  }
+  .logo-wrapper {
+    height: 50%;
+  }
+  .nav-container_ul {
+    width: 60%;
+  }
+  .nav-container_ul::before {
+    width: 102%;
+  }
+}
